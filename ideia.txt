@@ -1,0 +1,19 @@
+Site interativo sobre um site que vende sites interativos.
+
+Pagina com 4 seções:
+
+-Home
+-sobre
+-serviços
+-contato
+
+obs:
+header integrado com o home.
+
+Sobre: conceito da empresa, de onde surgiu, como e quais objetivos.
+
+contato: footer bem organizado, com 4 blocos:
+	- endereço
+	- contato(e-mail, numero, whatsapp)
+	- redes sociais
+	- direitos, autor etc.

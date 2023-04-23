@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.home{
+    z-index: 1;
+    height: 100vh;
+    background-color: black;
+    width: 100%;
+}
+.titulo h1{
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-2 h2{
+    color: white;
+    text-align: center;
+    padding-top: 1vh;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    transition: opacity 0.2s ease, transform 1s ease;
+}
+.titulo-2 h2 strong{
+    font-weight: 1000;
+    color: red;
+    transition: all ease 0.7s;
+}
+.titulo-2 h2 strong:hover{
+    font-size: 200%;
+    color: rgb(0, 255, 170);
+}
+
+.animated-img {
+    width: 30vh;
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    z-index: 12;
+}
+.header a{
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 4px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.home-btn{
+    background-color: red;
+    font-weight: 500;
+    margin-right: 40px;
+    border: solid 1px red;
+    border-radius: 5px;
+    position: static;
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+}
+.div-text {
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.div-text strong{
+    color: red;
+    font-weight: 1000;
+    font-size: large;
+}
+
+.sobre img {
+    max-width: 100%;
+    width: 30vh;
+    padding-top: 8vh;
+    padding-bottom: 4vh;
+}
+
+/* class para fazer o fade no scroll */
+.main-sec{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.main-sec.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.servicos-main{
+    height: 100vh;
+}
+
+.servicos-icon{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 50px;
+}
+.servicos-icon i{
+    font-size: 60px;
+    color: black;
+    transition: all 0.4s ease;
+}
+
+.servicos-icon i:hover{
+    color: red;
+}
+.contato-footer{
+    height: 600px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.endereco{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 375px;
+    height: 200px;
+}
+.redes-sociais{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 375px;
+    height: 100px;
+}
+.redes-sociais ul li a{
+    text-decoration: none;
+    color: black;
+}
+.contatos-mail{
+    display: flex;
+    justify-content: space-between;
+    width: 375px;
+    height: 100px;
+}
+.copyright{
+    display: flex;
+    align-items: flex-end;
+    font-size: 12px;
+    width: 375px;
+    height: 100px;
+}
+
+div ul li{
+    list-style: none;
+}
+
+div ul{
+    font-family: 'Montserrat', sans-serif;
+}
+
+div ul h1 strong{
+    color: red;
+    font-weight: 1000;
+}
+/* agora ajustando para telas maiores que 1280px */
+
+@media (min-width: 1280px){
+    .home{
+        height: 130vh;
+    }
+    /* usando o position: fixed; para o meu botao home ficar sempre na tela e o usuário poder voltar para ele. */
+    .home-btn{
+        margin-right: 230px;
+        position: fixed;
+        left: 0;
+    }
+    .animated-img{
+        width: 60vh;
+    }
+    .btn{
+    transition: all 0.2s ease-in;
+    }
+
+    .btn:hover{
+        background-color: red;
+        border-radius: 5px;
+    }
+    .sobre img{
+        width: 50vh;
+    }
+    .div-text{
+        margin-left: 100px;
+        font-size: 25px;
+        margin-right: 100px;
+    }
+    .div-text strong{
+        font-size: 30px;
+    }
+    .servicos-icon{
+        justify-content: space-evenly;
+    } 
+    .redes-sociais{
+        justify-content: space-between;
+        margin-left: 87px;
+    }
+    .contato-footer{
+        margin-left: 120px;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contatos-mail{
+        margin-right: 55px;
+    }
+    .copyright{
+        margin-left: 80px;
+        font-size: 12px;
+        align-items: center;
+    }
+}   
+

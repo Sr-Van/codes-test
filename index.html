@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <script src="/assets/js/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Codes. &copy;</title>
+</head>
+<body>
+   
+    <!-- fiz o header dentro do home pq queria que tudo ficasse na pagina inicial -->
+    <div id="home" class="home">
+         <div class="header">
+            <a class="home-btn btn" href="#home">Home</a>
+            <a class="btn" href="#sobre">Sobre</a>
+            <a class="btn" href="#servicos">Serviços</a>
+            <a class="contato-btn btn" href="#contatos">Contato</a>
+        </div>
+        <div class="titulo">
+            <h1>Turbine seu negócio com um WebSite interativo!</h1>
+        </div>
+        <figure>
+            <img src="/assets/images/dev-vetor.png" alt="dev-vetor" style=" justify-content: center; display: flex; margin: auto; padding-top: 20vh;" class="animated-img">
+        </figure>
+        <div class="titulo-2 main-sec">
+            <h2>Venha conhecer a <br> <strong>Codes.inc</strong></h2>
+        </div>
+    </div>
+    <main>
+        <!-- coloquei em divs com class "main-sec" para reutilizar o codigo que eu fiz de aparecer no scroll -->
+        <div id="sobre" class="sobre">
+            <div class="main-sec">
+                <img src="/assets/images/note-vetor.png" alt="vetor-note" class="vetor-note-img">
+            </div>
+            <div class="div-text main-sec">
+                A <strong>Codes</strong> é uma StartUp nova que tem como objetivo levar o seu negócio pra um patamar <strong>maior</strong> e mais <strong>abrangente</strong>.
+                <br>
+                Estamos no mercado à dois anos, tendo ótimos resultados, assim como <strong>você</strong> terá!
+            </div>
+        </div>
+        <!-- adicionado margin-top diretamente no html porque quero esse atributo independente do tamanho da tela -->
+        <div id="servicos" class="servicos-main main-sec">
+            <div class="div-text" style="margin-top: 100px;">Ter um site que interage e entrega ao seu cliente tudo sobre seus produtos e serviços, ajuda impulsionar ainda mais seu negócio, e a <strong>Codes</strong> está aqui pra isso.</div>
+            <div>
+                <h1 style="font-family: 'Montserrat', sans-serif; font-size: 28px; text-align: center; padding-top: 10vh;">Nosso serviços são:</h1>
+                <ul style="text-align: center; margin-right: 40px;">
+                    <li>Front-end</li>
+                    <li>Back-end</li>
+                    <li>Fullstack</li>
+                </ul>
+            </div>
+            <div class="div-text">
+                Utilizamos <strong>HTML5</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para levar a você o <strong>melhor</strong> resultado que pode conseguir com desenvolvimento Web.
+            </div>
+            <div class="servicos-icon">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
+            <!-- usando uma div para textos ocultos, caso não tenha JS a pessoa pode ver a msm explicação que acontece quando o evento no JS ativa, aqui no HTML. -->
+            <div class="text-sobre-icon" style="opacity: 0;">
+                <p>CSS: CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata) e é uma linguagem de estilo usada para descrever a apresentação de documentos HTML (ou XML). O CSS é usado para definir a aparência visual e o layout de uma página da web, separando o conteúdo HTML da apresentação visual.</p>
+                <p>HTML5: HTML 5 é a mais recente versão da linguagem de marcação usada para estruturar o conteúdo e layout de uma página da web, com novos recursos e elementos para criar sites interativos e responsivos, suporte nativo para áudio e vídeo, elementos de formulário avançados, gráficos vetoriais escaláveis e muito mais. Ele é amplamente utilizado para desenvolver sites e aplicativos da web modernos.</p>
+                <p>JavaScript: JavaScript é uma linguagem de programação usada principalmente para adicionar interatividade e dinamismo a sites da web. É executado no navegador do usuário e permite que os desenvolvedores criem e manipulem elementos HTML e CSS, respondam a eventos de usuário, validem formulários, criem animações, interajam com APIs externas e muito mais. Ele é uma das três principais tecnologias da web, juntamente com HTML e CSS, e é suportado por todos os principais navegadores da web.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- usei UL dentro das divs do footer pra padronizar e poupar tempo e código. -->
+        <div id="contatos" class="contato-footer">
+            <div class="endereco">
+                <ul>
+                    <h1><strong>Endereço</strong></h1>
+                    <li>Rua capitão Salamão</li>
+                    <li>138</li>
+                    <li>Centro</li>
+                    <li>Estancia-SE</li>
+                </ul>
+            </div>
+            <div class="redes-sociais">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="contatos-mail">
+                <ul>
+                    <li>E-mail: codes.inc@codes.com</li>
+                    <li>Telefone: 0800 000 8000</li>
+                    <li>WhatsApp: 55 89 99890 2</li>
+                </ul>
+            
+            </div>
+            <div class="copyright">
+                <ul>
+                    <li>SrVan &copy; 2023</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
